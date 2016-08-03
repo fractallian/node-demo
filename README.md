@@ -1,4 +1,4 @@
 Environment for techincal interviews using nodejs
 
 
-Usage: `grunt` then edit index.js
+Usage: `npm install` `grunt` then edit index.js
