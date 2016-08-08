@@ -1,7 +1,7 @@
 var _ = require('lodash');
 
 
-// rotate a n x n matrix in place
+// rotate a n x n matrix 90 degrees in place
 
 class Matrix {
   constructor(n) {
