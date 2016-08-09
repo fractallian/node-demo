@@ -1,8 +1,7 @@
-require('./index.js');
 var expect = require('chai').expect;
 
-var createDictionary = require('./index.js').createDictionary;
-var getWords = require('./index.js').getWords;
+var createDictionary = require('./search-tree.js').createDictionary;
+var getWords = require('./search-tree.js').getWords;
 
 describe('typeahead', () => {
   it('should store an array into a dictonary', () => {
