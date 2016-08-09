@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var processStream = require('./int-stream.js');
+var processStream = require('../src/int-stream.js');
 
 describe('integer-stream', () => {
   it('should calculate the median', () => {
@@ -17,5 +17,4 @@ describe('integer-stream', () => {
     expect(processStream([5]).mean).to.equal(5);
     expect(processStream([2,2,5,8,8]).mean).to.equal(25 / 5);
   });
-
 });

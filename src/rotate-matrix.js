@@ -67,17 +67,3 @@ function _pixel() {
 }
 
 module.exports = Matrix;
-
-
-
-var matrix = new Matrix(3);
-
-matrix.print();
-
-matrix.rotate();
-
-matrix.print();
-
-
-
-

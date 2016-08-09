@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var coinCombos = require('./coins.js');
+var coinCombos = require('../src/coins.js');
 
 describe('coinCombos', () => {
   it('should return possible coin combos given n cents', () => {
@@ -29,5 +29,3 @@ describe('coinCombos', () => {
 
   });
 });
-
-

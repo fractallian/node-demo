@@ -4,13 +4,13 @@
  * calculate the mean and median values after each integer is encountered
  */
 
-
 var index = 0; // total count
 
 var counts = {};
 var countList = [];
 
 var totalSum = 0;
+
 
 function processStream(stream) {
   index = 0;

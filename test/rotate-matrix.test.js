@@ -1,5 +1,5 @@
 var expect = require('chai').expect;
-var Matrix = require('./rotate-matrix.js');
+var Matrix = require('../src/rotate-matrix.js');
 
 describe('Matrix', () => {
   it('should rotate coords', () => {

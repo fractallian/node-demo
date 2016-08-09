@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 
-var createDictionary = require('./search-tree.js').createDictionary;
-var getWords = require('./search-tree.js').getWords;
+var createDictionary = require('../src/search-tree.js').createDictionary;
+var getWords = require('../src/search-tree.js').getWords;
 
 describe('typeahead', () => {
   it('should store an array into a dictonary', () => {
@@ -14,5 +14,6 @@ describe('typeahead', () => {
     expect(getWords('new')).to.deep.equal(['new york', 'new jersey', 'new']);
     expect(getWords('never')).to.deep.equal(['never']);
     expect(getWords('fo')).to.deep.equal(['foo']);
-  })
-})
+  });
+});
+
