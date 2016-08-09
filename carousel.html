@@ -1,0 +1,73 @@
+<!-- Thumbtack interview #3: write a simple functional image carousel as quickly as possible -->
+
+</!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+
+  <style>
+  img {
+    width: 400px;
+    height: 150px;
+    display: block;
+    float: left;
+  }
+  .img-container {
+    white-space: nowrap;
+    position: absolute;
+    height: 150px;
+    width: 1600px;
+    left: 0;
+  }
+  .carousel {
+    position: absolute;
+    width: 400px;
+    height: 150px;
+    overflow: hidden;
+  }
+  .buttons {
+    padding-top: 150px;
+  }
+  </style>
+
+  <script>
+  var position = 0;
+  function next() {
+    if (position > -1200) {
+      position -= 400;
+      $('.img-container').animate({left: position});
+    }
+  }
+  function prev() {
+    if (position < 0) {
+      position += 400;
+      $('.img-container').animate({left: position});
+    }
+  }
+  $(document).ready(function() {
+    $('.next').on('click', next);
+    $('.prev').on('click', prev);
+  });
+
+  </script>
+
+</head>
+<body>
+  <div class="carousel">
+  <div class="img-container">
+  <img src="http://www.ew.com/sites/default/files/styles/tout_image_612x380/public/1455655770/homer.jpg?itok=TOtuVefM"/>
+  <img src="http://images.complex.com/complex/image/upload/t_article_image/bart-simpson-the-simpsons_hpsrpk.jpg"/>
+  <img src="http://media.globaltv.com/uploadedimages/pages/shows/the_simpsons/the_simpsons_smartforms/mainelement.png?n=6428"/>
+  <img src="http://vignette2.wikia.nocookie.net/simpsons/images/d/df/Maggie-Simpson-icon.png/revision/latest?cb=20140817104831"/>
+  </div>
+  </div>
+
+  <div class="buttons">
+  <a href="#" class="prev">Prev</a>
+  <a href="#" class="next">Next</a>
+  </div>
+
+</body>
+</html>
