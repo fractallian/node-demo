@@ -9,7 +9,12 @@ module.exports = function(grunt) {
       tasks: ['mochaTest']
     },
     execute: {
-      src: ['int-stream.js']
+      nylas: {
+        src: ['src/deactivate-nylas.js']
+      },
+      rabbits: {
+        src: ['src/rabbits.js']
+      }
     },
     mochaTest: {
       test: {
@@ -17,7 +22,7 @@ module.exports = function(grunt) {
           reporter: 'spec',
           clearRequireCache: true // Optionally clear the require cache before running tests (defaults to false)
         },
-        src: ['test/**/*.test.js']
+        src: ['test/**/rabbits.test.js']
       }
     }
   });
