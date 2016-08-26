@@ -9,12 +9,9 @@ module.exports = function(grunt) {
       tasks: ['mochaTest']
     },
     execute: {
-      nylas: {
-        src: ['src/deactivate-nylas.js']
-      },
-      rabbits: {
-        src: ['src/rabbits.js']
-      }
+      // rabbits: {
+      //   src: ['src/rabbits.js']
+      // }
     },
     mochaTest: {
       test: {
